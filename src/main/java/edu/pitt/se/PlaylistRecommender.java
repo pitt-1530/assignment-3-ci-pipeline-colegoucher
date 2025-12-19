@@ -17,10 +17,9 @@ public class PlaylistRecommender {
 
         int totalBmps = 0;
         for (Integer bpm : bpms) {
-            count++;
             totalBmps += bpm;
         }
-        avg = totalBmps / bpms.size();
+        int avg = totalBmps / bpms.size();
 
         if(avg >= 140) {
             return "HIGH";
